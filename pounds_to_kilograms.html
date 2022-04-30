@@ -1,0 +1,11 @@
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+}
+</script>
